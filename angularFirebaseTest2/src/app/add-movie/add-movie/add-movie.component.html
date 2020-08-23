@@ -1,0 +1,35 @@
+<section class="movieWrapper">
+    <mat-card class="addMovieCard">
+        <mat-card-title>
+            Add Movie
+        </mat-card-title>
+
+        <form (ngSubmit) = "submitForm()" [formGroup] = "addForm" >
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" formControlName="name">
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Genre</mat-label>
+                <input matInput placeholder="Genre" formControlName="genre">
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Year</mat-label>
+                <input matInput placeholder="Year" formControlName="year">
+            </mat-form-field>
+
+            <br>
+
+            <button  mat-raised-button color="primary" type="submit">
+                Submit
+            </button>
+
+        </form>
+    </mat-card>
+</section>

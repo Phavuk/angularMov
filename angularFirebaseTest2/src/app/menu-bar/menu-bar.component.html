@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="navbar">
+    <mat-toolbar-row class="row">
+            <!-- <a routerLink='/addOrder' routerLinkActive='active' *ngIf="loggedUser"><li>Add Order</li></a>
+            <a routerLink='/orders' routerLinkActive='active' *ngIf="loggedUser"><li>Orders</li></a> -->
+            <a routerLink='/movies' routerLinkActive='active' *ngIf="loggedUser"><li>Movie List</li></a>
+            <a routerLink='/addmovie' routerLinkActive='active' *ngIf="loggedUser"><li>Add Movie</li></a>
+            <a routerLink='/users' routerLinkActive='active' *ngIf="loggedUser && admin"><li>Users</li></a>
+            <a routerLink='/profile' routerLinkActive='active' *ngIf="loggedUser"><li>Profile</li></a>
+            <a routerLink='/login' routerLinkActive='active' *ngIf="!loggedUser"><li>Login</li></a>
+            <a routerLink='/register' routerLinkActive='active' *ngIf="!loggedUser"><li>Registration</li></a>
+            <li *ngIf="loggedUser" >
+                <button mat-raised-button color="accent" (click) = "logout()">Logout</button>
+            </li>
+    </mat-toolbar-row>
+</mat-toolbar>

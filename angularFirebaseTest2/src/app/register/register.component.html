@@ -1,0 +1,37 @@
+<section class="registerWrapper">
+    <form class="regForm" (ngSubmit)="submitForm()" [formGroup] = "registerForm">
+    <mat-card class="regCard">
+        <mat-card-title>
+            Register
+        </mat-card-title>
+
+        <mat-form-field >
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter name" required formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field >
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter email" required formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field >
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Enter password" required formControlName="password">
+        </mat-form-field>
+
+        <mat-form-field >
+            <mat-label>Repeat Password</mat-label>
+            <input type="password" matInput placeholder="Repeat password" required formControlName="password2">
+        </mat-form-field>
+
+        <span>{{passwordMessage}}</span>
+        <span *ngIf="password?.errors?.weakPassword">
+            {{password.errors.weakPassword}}
+        </span>
+
+        <button mat-button mat-raised-button color="primary" [disabled]="registerForm?.invalid">Submit</button>
+
+        </mat-card>
+    </form> 
+</section>

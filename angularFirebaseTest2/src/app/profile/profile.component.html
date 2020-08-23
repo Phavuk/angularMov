@@ -1,0 +1,44 @@
+<section class="profileWrapper">
+    <mat-card class="profileCard">
+        <mat-card-title>
+            User Profile
+        </mat-card-title>
+
+        <br>
+
+        <h1>Name</h1>
+
+        <br>
+        <mat-card-content *ngIf="user">
+            {{ user.name }}
+        </mat-card-content>
+        
+        <br>
+
+        <h1>E-mail</h1>
+
+        <br>
+        <mat-card-content *ngIf="user">
+            {{ user.email }}
+        </mat-card-content>
+
+        <br>
+
+        <h1>Active</h1>
+
+        <br>
+        <mat-card-content *ngIf="user">
+            {{ user.active ? 'User is active': 'User is not active' }}
+        </mat-card-content>
+
+        <br>
+        <mat-card-content *ngIf="user">
+
+        <button  mat-raised-button color="primary" routerLink='/editProfile'>
+            <mat-icon aria-hidden="false">edit</mat-icon>
+        </button>
+
+        </mat-card-content>
+    </mat-card>
+
+</section>

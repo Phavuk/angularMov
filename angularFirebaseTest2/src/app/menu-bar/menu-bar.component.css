@@ -1,0 +1,22 @@
+
+.navbar {
+    width:100%;
+} 
+
+.row {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.row li {
+    margin:15px;
+    color:white;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    target:pointer;
+} 

@@ -1,0 +1,37 @@
+<section class="editProfileWrapper">
+    <mat-card class="editProfileCard">
+
+        <mat-card-title>
+           Edit User Profile
+        </mat-card-title>
+
+        <form (ngSubmit) = "submitForm()" [formGroup] = "editForm" >
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" formControlName="name">
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="E-mail" formControlName="email">
+            </mat-form-field>
+
+            <br>
+
+            <mat-checkbox required formControlName="active">
+            Active
+            </mat-checkbox>
+
+            <br>
+
+            <button  mat-raised-button color="primary" type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </mat-card>
+
+</section>

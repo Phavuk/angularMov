@@ -1,0 +1,21 @@
+.tableWrap {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.tableWrap table {
+    border-collapse: collapse!important;
+    background-color:white!important;
+    color:black!important;
+    width:800px;
+    border-spacing: 10px;
+}
+
+.tableWraptable,th,td{
+    border: 1px solid white!important;
+    font-size: 1em;
+    text-align:center!important;
+}
