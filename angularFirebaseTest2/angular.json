@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "angularFirebaseTest2"
+  "defaultProject": "angularFirebaseTest2",
+  "cli": {
+    "analytics": false
+  }
 }

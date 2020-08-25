@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\add-movie",
+    "\\src\\app\\add-movie\\add-movie",
+    "\\src\\app\\movies-table",
+    "\\src\\app\\movies-table\\movies-table",
+    "\\src\\app\\profile",
+    "\\src\\assets",
+    "\\src\\entities"
+  ],
+  "SelectedNode": "\\src\\app\\add-movie\\add-movie\\add-movie.component.ts",
+  "PreviewInSolutionExplorer": false
+}

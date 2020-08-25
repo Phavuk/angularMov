@@ -5,15 +5,14 @@
 // tu mme data ktore sa tykaju našho prepojenia s firebase databazou
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: 'AIzaSyAhIivuGL-s17pqk6HkpPQS-5QWEgo2f7s',
-    authDomain: 'fir-test-6d187.firebaseapp.com',
-    databaseURL: 'https://fir-test-6d187.firebaseio.com',
-    projectId: 'fir-test-6d187',
-    storageBucket: 'fir-test-6d187.appspot.com',
-    messagingSenderId: '587381209113',
-    appId: '1:587381209113:web:c3df3a969b78ceb478d288',
-    measurementId: 'G-7RV0C2ZXP1'
+  firebaseConfig : {
+    apiKey: "AIzaSyCkA6Er6kuDWPmMvwDM4tPibbSDLQ6EQr0",
+    authDomain: "angularmovie-c0afc.firebaseapp.com",
+    databaseURL: "https://angularmovie-c0afc.firebaseio.com",
+    projectId: "angularmovie-c0afc",
+    storageBucket: "angularmovie-c0afc.appspot.com",
+    messagingSenderId: "314127289361",
+    appId: "1:314127289361:web:d6ac27b194199f45a5b5b0"
   }
 };
 
